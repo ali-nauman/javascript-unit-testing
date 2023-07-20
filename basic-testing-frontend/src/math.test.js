@@ -2,7 +2,10 @@ import { expect, it } from "vitest";
 import { add } from "./math";
 
 it("should sum all number values in an array", () => {
-  const sum = add([1, 2, 3]);
+  const numbers = [1, 2, 3];
+  const expectedSum = numbers.reduce((sum, n) => sum + n);
 
-  expect(sum).toBe(6);
+  const sum = add(numbers);
+
+  expect(sum).toBe(expectedSum);
 });
