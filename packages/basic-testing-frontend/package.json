@@ -1,5 +1,5 @@
 {
-  "name": "basic-testing-frontend",
+  "name": "@javascript-unit-testing/basic-testing-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",

@@ -1,5 +1,5 @@
 {
-  "name": "basic-testing-nodejs",
+  "name": "@javascript-unit-testing/basic-testing-nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
