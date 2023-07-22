@@ -12,6 +12,7 @@
   "workspaces": [
     "packages/basic-testing-frontend",
     "packages/basic-testing-nodejs",
-    "packages/basic-testing-nodejs-esmodules"
+    "packages/basic-testing-nodejs-esmodules",
+    "packages/async-code"
   ]
 }
