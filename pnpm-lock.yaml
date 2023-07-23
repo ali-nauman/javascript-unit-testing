@@ -66,6 +66,16 @@ importers:
         specifier: ^0.9.2
         version: 0.9.2
 
+  packages/side-effects:
+    dependencies:
+      jsonwebtoken:
+        specifier: ^8.5.1
+        version: 8.5.1
+    devDependencies:
+      vitest:
+        specifier: ^0.9.2
+        version: 0.9.2
+
 packages:
 
   /@bcoe/v8-coverage@0.2.3:
