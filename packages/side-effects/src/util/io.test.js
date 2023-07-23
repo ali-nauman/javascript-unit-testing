@@ -4,6 +4,15 @@ import { promises as fs } from "fs";
 import writeData from "./io";
 
 vi.mock("fs");
+vi.mock("path", () => {
+  return {
+    default: {
+      join(...args) {
+        return args[args.length - 1];
+      },
+    },
+  };
+});
 
 describe("writeData()", () => {
   it("should execute the writeFile method", () => {
@@ -13,6 +22,7 @@ describe("writeData()", () => {
     writeData(testData, testFilename);
 
     // return expect(writeData(testData, testFilename)).resolves.toBeUndefined();
-    expect(fs.writeFile).toBeCalled();
+    // expect(fs.writeFile).toBeCalled();
+    expect(fs.writeFile).toBeCalledWith(testFilename, testData);
   });
 });
