@@ -1,5 +1,4 @@
-import { expect } from "vitest";
-import { describe, it, vi } from "vitest";
+import { expect, describe, it, vi } from "vitest";
 import { sendDataRequest } from "./http";
 import { HttpError } from "./errors";
 
